@@ -29,11 +29,11 @@ body {
     color: #0275d8;
 }
 
-.jumbotron {
+.hero {
   padding: 12rem 1rem;
   margin-bottom: 2rem;
-  border-radius: 0rem;
-  height: 50rem;
+  border-radius: 0px; 
+  height: 70rem;
   background: url(../img/city-transportation-traffic.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -42,7 +42,7 @@ body {
   width: 100%;
 }
 
-.jumbotron h1 {
+.hero h1 {
   font-size: 8rem;
   font-weight: 300;
   line-height: 1.1;
