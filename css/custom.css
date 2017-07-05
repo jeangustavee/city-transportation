@@ -12,7 +12,7 @@ body {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.75;
 }
 
@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    background-image: url('../img/hero.png');
+    background-image: url('../img/overlay-tranportationcity.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -420,6 +420,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 .btn:focus, .btn:active, .btn.active, .btn:active:focus {
     outline: none;
+    padding-bottom: 100px;
 }
 
 .container {
@@ -428,7 +429,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 
 .welcome {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 70px;
 }
 
@@ -437,7 +438,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 
 #content {
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 
 /* CONTACT */
@@ -566,7 +567,7 @@ fieldset {
 }
 
 .top-page {
-    background-image: url('../img/hero.png');
+    background-image: url('../img/wheelchair2.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -577,6 +578,7 @@ fieldset {
     text-align: left;
     color: white;
     height: 450px;
+    margin-bottom: 80px;
 }
 
 .top-page .intro-text {
@@ -631,4 +633,66 @@ fieldset {
   font-size: 1.5em;
   line-height: 1.5em;
   color: #11224e;
+}
+
+.cl-bt-services {
+    margin-bottom: -100px;
+}
+
+.cl-services {
+    margin-top: -100px;
+}
+
+@media only screen and (max-width:984px){
+     .cl-bt-services {
+    margin-bottom: 0px;
+        }
+
+    .cl-services {
+    margin-top: -50px;
+    }   
+}
+
+/* accordion */
+
+#accordion {
+    background-color: transparent;
+}
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+.panel-heading {
+  padding: 5px;
+  border: 0px solid;
+}
+
+.panel-title a{
+  padding:10px; 
+  display:block;
+  text-decoration: none;
+  color: #11224e;
+  background-color: white;
+}
+
+.panel-title a[aria-expanded='true'] {
+  background-color: #11224e;
+  color:#fff;
+}
+
+.panel-title a[aria-expanded='true']::after {
+  color:white;
+}
+.panel-default {
+    border: 0px solid;
+    background-color: transparent;
+    box-shadow: 0px 0px 0px;
 }
